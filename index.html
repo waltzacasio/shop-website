@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .carousel.carousel-slider {
+        max-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-wrapper custom-bg-color">
+        <div class="container">
+          <a href="#" class="brand-logo"
+            ><i class="material-icons hide-on-small-and-down">code</i
+            >WalterDev.Info</a
+          >
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="https://github.com/waltzacasio"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-position="bottom"
+                data-tooltip="Github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="carousel carousel-slider">
+      <!-- <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div> -->
+      <div class="carousel-item">
+        <img src="img/landscape.jpg" alt="" class="responsive-img" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/sunset.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <div style="height: 600px"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      //   var instance = M.Carousel.init({
+      //     fullWidth: true,
+      //     indicators: true,
+      //   });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $(".carousel.carousel-slider").carousel({
+          fullWidth: true,
+          indicators: true,
+        });
+      });
+    </script>
+  </body>
+</html>
